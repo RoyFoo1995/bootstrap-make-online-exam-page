@@ -1,33 +1,144 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
-        <script src="./jquery-3.2.1.js"></script>        
-        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    </head>
-    <body>
-        <!--write your code here-->
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        You're ready to go!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<head>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  <script src="./jquery-3.2.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <!--write your code here-->
+  <!-- Button trigger modal -->
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>统一建模语言理论测试</h3>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 20px">
+    <div class="col-xs-2">
+      考试科目：
+    </div>
+    <div class="col-xs-2">
+      统一建模语言
+    </div>
+    <div class="col-xs-2">
+      时间：
+    </div>
+    <div class="col-xs-2">
+      100分钟
+    </div>
+    <div class="col-xs-2">
+      得分：
+    </div>
+    <div class="col-xs-2">
+      100
+    </div>
+  </div>
+  <dev class="row">
+    <div class="col-xs-2">
+      班级：
+    </div>
+    <input type="text" placeholder="1班" class="col-xs-2">
+    <div class="col-xs-2">
+      学号：
+    </div>
+    <input type="number" placeholder="001" class="col-xs-2">
+    <div class="col-xs-2">
+      姓名：
+    </div>
+    <input type="text" placeholder="王小闹" class="col-xs-2">
+  </dev>
+  <h4>一、填空题（每空5分，共20分）</h4>
+  <ol>
+    <li>
+      UML的中文全称是：
+      <input type="text" placeholder="统一建模语言">
+    </li>
+    <li>
+      对象最突出的特征是：
+      <input type="text" placeholder="统一建模语言">
+      <input type="text" placeholder="继承性">
+      <input type="text" placeholder="多态性">
+    </li>
+  </ol>
+  <h4>二、选择题（每空10分，共20分）</h4>
+  <ol>
+    <li>
+      UML与软件工程的关系是：
+      <br>
+      <input type="radio" name="software" id=""> (A)UML就是软件工程
+      <br>
+      <input type="radio" name="software" id=""> (B)UML参与到软件工程中软件开发过程的几个阶段
+      <br>
+      <input type="radio" name="software" id=""> (C)UML与软件工程无关
+      <br>
+      <input type="radio" name="software" id=""> (D)UML是软件工程的一部分
+      <br>
+    </li>
+    <li>
+      Java语言支持：
+      <br>
+      <input type="radio" name="software" id=""> (A)单继承
+      <br>
+      <input type="radio" name="software" id=""> (B)多继承
+      <br>
+      <input type="radio" name="software" id=""> (C)单继承和多继承都支持
+      <br>
+      <input type="radio" name="software" id=""> (D)单继承和多继承都不支持
+      <br>
+    </li>
+  </ol>
+  <h4>三、多择题（每题10分，共20分）</h4>
+  <ol>
+    <li>
+      用例的粒度分为以下哪三种：
+      <br>
+      <input type="checkbox" name="software" id="" checked="checked"> (A)概述级
+      <br>
+      <input type="checkbox" name="software" id=""> (B)需求级
+      <br>
+      <input type="checkbox" name="software" id=""> (C)用户目标级
+      <br>
+      <input type="checkbox" name="software" id=""> (D)子功能级
+      <br>
+    </li>
+    <li>
+      类图由以下哪三部分组成：
+      <br>
+      <input type="checkbox" name="software" id="" checked="checked"> (A)名称
+      <br>
+      <input type="checkbox" name="software" id=""> (B)属性
+      <br>
+      <input type="checkbox" name="software" id=""> (C)操作
+      <br>
+      <input type="checkbox" name="software" id=""> (D)方法
+      <br>
+    </li>
+  </ol>
+  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          You're ready to go!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-    </body>
+</body>
+
 </html>
